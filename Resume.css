@@ -1,0 +1,176 @@
+body{
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    font-family: poppins sans-serif ;
+}
+.resume{
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+    max-width: 1000px;
+   min-width: 300px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.13);
+   left: 20%;
+   top: 20px;
+    
+}
+.resume .leftside{
+    background-color: rgb(13, 13, 59);
+    width: 400px;
+    border: 2px solid black;
+}
+
+.leftside img{
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+.leftside h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.leftside h3{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+div .percent{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    margin-top: 20px;
+    color: blue;
+    position: relative;
+}
+div.style{
+    width: 90%;
+    height: 10px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.details{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(9, 9, 41, 0.267);
+    border: 1px solid rgba(36, 11, 104, 0.158);
+    border-radius: 10px;
+}
+
+
+.details h2{
+    font-size: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.details p{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.resume .rightside{
+    background-color: rgb(180, 178, 178);
+   
+    border: 2px solid black;
+    
+    padding: 40px;
+}
+
+.rightside h1{
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+}
+.rightside p{
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.rightside h5{
+    color: rgb(20, 56, 155);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.rightside span{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-top: 20px;
+}
+.hobbies p{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: blue;   
+}
+.Account a{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: blue;
+    gap: 50px;
+}
+@media screen and (max-width: 375px ) {
+    .resume{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .resume .rightside{
+        width: 100%;
+        padding: 10px;
+    }
+    .rightside{
+        width: 100%;
+    }
+    .hobbies p{
+        display: flex;
+        flex-direction: column;
+    }
+    .Account a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+@media screen and (max-width: 500px ) {
+    .resume{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        position: relative;
+        
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .resume .rightside{
+        width: 100%;
+    }
+    .rightside{
+        width: 100%;
+    }
+    .hobbies p{
+        display: flex;
+        flex-direction: column;
+    }
+    .Account a{
+        display: flex;
+        flex-direction: column;
+    }
+}
