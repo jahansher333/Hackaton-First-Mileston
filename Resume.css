@@ -121,56 +121,93 @@ div.style{
     color: blue;
     gap: 50px;
 }
-@media screen and (max-width: 375px ) {
-    .resume{
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .leftside{
-        width: 100%;
-    }
-    .resume .rightside{
-        width: 100%;
-        padding: 10px;
-    }
-    .rightside{
-        width: 100%;
-    }
-    .hobbies p{
-        display: flex;
-        flex-direction: column;
-    }
-    .Account a{
-        display: flex;
-        flex-direction: column;
-    }
 
-    
-}
-@media screen and (max-width: 500px ) {
+
+@media only screen and (max-width: 600px) {
     .resume{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
-        position: relative;
-        
-        margin-bottom: 40px;
-        margin-right: 40px;
+        left: 0;    
+        right: 0;
+    }
+    .leftside{
+        width: 10%;
+        height: 100%;
+
+    }
+    .rightside{
+        width: 80%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .resume{
+        grid-template-columns: repeat(1, 2fr);
+        width: 100%;
+        left: 0;    
+        right: 0;
     }
     .leftside{
         width: 100%;
+        min-width: 740px;
+        height: 100%;
     }
-    .resume .rightside{
-        width: 100%;
+    .rightside{
+        width: 88%;
+       
+        height: 100%;
+    }
+    .leftside img{
+        border: none;
+        margin-left: 220px;
+       
+    }
+      
+}
+@media only screen and (max-width: 820px){
+    .resume{
+        grid-template-columns: repeat(1, 1fr);
+        
+        left: 0;    
+        right: 100px;
+    }
+    .leftside{
+        width: 200%;
+        min-width: 1000px;
+        
     }
     .rightside{
         width: 100%;
+       
+      
     }
-    .hobbies p{
-        display: flex;
-        flex-direction: column;
+    .leftside img{
+        border: none;
+        margin-left: 220px;
+       
     }
-    .Account a{
-        display: flex;
-        flex-direction: column;
+      
+
+}
+@media only screen and (max-width: 540px){
+    .resume{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        left: 0;    
+        right: 0;
     }
+    .leftside{
+        width: 100%;
+        min-width: 700px;
+        height: 100%;
+    }
+    .rightside{
+        width: 88%;
+       
+        height: 100%;
+    }
+    .leftside img{
+        border: none;
+        margin-left: 220px;
+}
 }
