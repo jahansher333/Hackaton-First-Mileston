@@ -13,8 +13,8 @@ body{
    display: grid;
    grid-template-columns: 1fr 2fr;
    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.13);
-   left: 20%;
-   top: 20px;
+   left: 40%;
+   top: 40px;
     
 }
 .resume .leftside{
@@ -120,6 +120,24 @@ div.style{
     justify-content: space-between;
     color: blue;
     gap: 50px;
+}
+.button{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: blue;
+    gap: 50px;
+
+}
+.button button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(13, 13, 59);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
 }
 
 
